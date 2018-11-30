@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{content.title}}
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+	<div class="row">
+	{% for link in cat.categories %}
+		<div class="col-md-3 text-center">
+			<a href="/meals/{{link.strCategory}}">
+			<img src="{{link.strCategoryThumb}}" class="img-fluid">
+			<h2>{{link.strCategory}}</h2>
+			</a>
+		</div>
+	{% endfor%}
+	</div>
+	
+</div>
+	
+{% endblock %}

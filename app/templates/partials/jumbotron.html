@@ -1,0 +1,14 @@
+<div class="jumbotron">
+	<div class="container">
+		<div class="col-md-6">
+			<h1>{{content.title}}</h1>
+			<p>{{content.text}}</p>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.jumbotron {
+	background: url("{{ url_for('static', filename='img/spices.jpg') }}") no-repeat center center;
+	background-size: cover;
+}	
+</style>

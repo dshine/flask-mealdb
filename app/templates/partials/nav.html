@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-sm bg-light">
+	<div class="container">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a href="/" class="nav-link">Home</a>
+		</li>
+		{% for link in cat.categories %}
+			<li class="nav-item">
+				<a href="/meals/{{link.strCategory}}" class="nav-link">{{link.strCategory}}</a>
+			</li>
+		{% endfor%}
+	</ul>	
+</div>
+</nav>

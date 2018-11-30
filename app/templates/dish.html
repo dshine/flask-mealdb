@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{content.title}}
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="{{items.meals[0].strMealThumb}}" class="img-fluid">
+		</div>
+		<div class="col-md-8">
+			<h1>{{items.meals[0].strMeal}}</h1>
+			<p>{% include 'partials/ingredients.html' %}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<p>{{items.meals[0].strInstructions}}</p>
+		</div>
+		<div class="col-md-6">
+			<p>{% include 'partials/youtubeEmbed.html' %}</p>
+		</div>
+	</div>
+</div>
+	
+{% endblock %}
