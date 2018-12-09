@@ -1,3 +1,11 @@
 .jumbotron {
 	color: #b1b1b1;
 }
+.row {
+	padding-bottom: 20px;
+}
+
+footer {
+	background: #b1b1b1;
+	color: #fff;
+}

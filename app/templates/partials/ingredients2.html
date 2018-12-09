@@ -1,0 +1,8 @@
+{% for n in range(1,20) %}
+	{% if items.meals[0]["strIngredient%s" % n] %}
+	<div class="col-md-1">
+		<img src="https://www.themealdb.com/images/ingredients/{{items.meals[0]['strIngredient%s' % n] | urlencode }}-Small.png" alt="{{items.meals[0]['strIngredient%s' % n]}}" class="img-fluid">
+	</div>
+		
+	{% endif %}
+{% endfor %}

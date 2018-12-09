@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Internal Error
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h1>Congratulations!!</h1>
+			<h2>You have reached the end of the internet.</h2>
+			<p>Actually, something broke on our site, we are trying to fix it.</p> <hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Boring debug info</h3>
+			<p>{{error}}</p>
+		</div>
+	</div>
+	
+</div>
+	
+{% endblock %}

@@ -9,8 +9,8 @@
 <div class="container">
 	<div class="row">
 	{% for link in items.meals%}
-		<div class="col-md-3 text-center">
-			<a href="/meals/{{foodtype}}/{{link.idMeal}}">
+		<div class="col-md-3 col-6 text-center">
+			<a href="/meals/{{foodtype}}/{{link.idMeal}}-{{link.strMeal | lower | replace(' ', '-') | urlencode }}">
 				<img src="{{link.strMealThumb}}" class="img-fluid">
 				<p>{{link.strMeal}}</p>
 			</a>
